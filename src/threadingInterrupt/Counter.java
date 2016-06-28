@@ -18,7 +18,7 @@ public class Counter implements Runnable{
 			System.out.println(ct.getName() + " running");
 			count++;
 		}
-		System.out.println("User paused the timer.");
+		
 		
 	}
 	

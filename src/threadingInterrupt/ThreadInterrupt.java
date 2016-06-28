@@ -20,7 +20,7 @@ public class ThreadInterrupt {
 			s = in.nextLine();
 			System.out.println(ct.getName() + " running");
 		}
-		counter1.interrupt();
+		
 		counter2.interrupt();
 		in.close();
 	}
