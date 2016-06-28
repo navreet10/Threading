@@ -8,16 +8,17 @@ public class Counter implements Runnable{
 		int count = 1;
 		System.out.println("Timer begins");
 		
-		while(count != 10000) {
+		while(true) {
 			try {
-				Thread.sleep(2000);
+				Thread.sleep(1000);
 			} catch (InterruptedException e) {
-				System.out.println("wait");
+				break;
 			}
 			System.out.println("Elapsed Time: " + count + " seconds");
 			System.out.println(ct.getName() + " running");
 			count++;
 		}
+		System.out.println("User paused the timer.");
 		
 		
 	}
